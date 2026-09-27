@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mingjie Zhu — MEng student at UCLA working on AI systems, agents, infrastructure, and computational fabrication.">
+  <title>Mingjie Zhu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="profile">
+      <img class="avatar" src="assets/avatar.jpg" alt="Mingjie Zhu">
+      <div class="profile-text">
+        <h1>Mingjie Zhu <span class="cn-name">朱明杰</span></h1>
+        <p class="position">MEng Student in Artificial Intelligence</p>
+        <p>University of California, Los Angeles</p>
+        <p class="contact">
+          zhumingjie0627@outlook.com
+          <span>·</span>
+          jayzhu@ucla.edu
+          <span>·</span>
+          github.com/SoySauceZhu
+        </p>
+        <p class="updated">Last updated: Sep 2026</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am an MEng student in Artificial Intelligence at UCLA. Before UCLA, I studied Computer Science and
+        Electronic Engineering through a 2+2 program at Xi’an Jiaotong-Liverpool University and the University of Liverpool.
+      </p>
+      <p>
+        My interests include AI systems, agent infrastructure, machine learning systems, and computational
+        fabrication. I enjoy building end-to-end systems that connect algorithms with software or physical execution.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry simple-entry">
+        <div>
+          <strong>University of California, Los Angeles</strong><br>
+          MEng in Artificial Intelligence
+        </div>
+        <div class="date">Sep 2026 – Expected Sep 2027</div>
+      </div>
+      <div class="entry simple-entry">
+        <div>
+          <strong>University of Liverpool</strong><br>
+          BEng in Computer Science and Electronic Engineering · GPA: 4.0/4.0
+        </div>
+        <div class="date">Sep 2024 – May 2026</div>
+      </div>
+      <div class="entry simple-entry">
+        <div>
+          <strong>Xi’an Jiaotong-Liverpool University</strong><br>
+          2+2 Program in Computer Science and Electronic Engineering · GPA: 3.92/4.0
+        </div>
+        <div class="date">Sep 2022 – Jun 2024</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+
+      <article class="project">
+        <a class="thumb" href="assets/plasma-diagnosis-poster.pdf" target="_blank">
+          <img src="assets/plasma-diagnosis-poster.jpg" alt="ML-assisted plasma diagnosis project poster">
+        </a>
+        <div class="project-text">
+          <h3>ML-Assisted Real-Time Plasma Diagnosis</h3>
+          <p class="meta">Final Year Project · University of Liverpool · Apr 2026</p>
+          <p>
+            A machine learning pipeline that predicts H<sub>2</sub>O<sub>2</sub> yield from optical emission
+            spectroscopy (OES) in nanosecond pulsed CO<sub>2</sub> bubble discharge. The project progresses through
+            four phases — baseline PCA modelling, Bayesian hyperparameter tuning (Optuna TPE), domain-knowledge-driven
+            feature engineering, and interpretability analysis (SHAP, permutation testing, bootstrap CI) —
+            demonstrating that physically meaningful OES features dramatically outperform PCA-reduced components
+            (Ridge regression on combined OES + discharge inputs: R² from −0.17 to 0.80).
+          </p>
+          <p>
+            <a href="assets/plasma-diagnosis-poster.pdf" target="_blank">[Poster]</a>
+            <a href="https://github.com/SoySauceZhu/ml-assisted-plasma-diagnosis" target="_blank" rel="noreferrer">[GitHub]</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="thumb" href="assets/string-art-poster.pdf" target="_blank">
+          <img src="assets/string-art-poster.jpg" alt="String art project poster">
+        </a>
+        <div class="project-text">
+          <h3>Creating Portraits with Strings</h3>
+          <p class="meta">String Art Generation using Radon Transform · Jun 2024</p>
+          <p>
+            A computational string-art generator that approximates grayscale portraits with straight strings
+            connecting nails on a circular canvas. The system uses image preprocessing, Radon-domain representations,
+            and greedy line selection to iteratively construct a string sequence.
+          </p>
+          <p>
+            <a href="assets/string-art-poster.pdf" target="_blank">[Poster]</a>
+            <a href="https://github.com/SoySauceZhu/StringArt" target="_blank" rel="noreferrer">[GitHub]</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="thumb" href="assets/etchbot-poster.pdf" target="_blank">
+          <img src="assets/etchbot-poster.jpg" alt="Etch A Sketch robot project poster">
+        </a>
+        <div class="project-text">
+          <h3>EtchBot</h3>
+          <p class="meta">Image-to-Physical Single-Line Drawing Robot · Mar 2025</p>
+          <p>
+            A CNC-inspired drawing robot that converts digital images into physical sketches. The software pipeline
+            uses OpenCV edge detection (Canny) and DFS-based continuous-path planning on edge graphs, converts
+            the path into G-code, and sends commands to an Arduino controlling two stepper motors.
+          </p>
+          <p>
+            <a href="assets/etchbot-poster.pdf" target="_blank">[Poster]</a>
+            <a href="https://www.youtube.com/watch?v=834GOHdpZwg" target="_blank" rel="noreferrer">[Video]</a>
+            <a href="https://github.com/SoySauceZhu/etchbot" target="_blank" rel="noreferrer">[GitHub]</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="thumb" href="https://github.com/SoySauceZhu/Pac-Man" target="_blank" rel="noreferrer">
+          <img src="assets/pacman-map.png" alt="Procedurally generated Pac-Man map">
+        </a>
+        <div class="project-text">
+          <h3>Pac-Man</h3>
+          <p class="meta">Procedural Dungeon Generation in Java · May 2024</p>
+          <p>
+            A tile-based Pac-Man game with a procedural map generator written in Java. The generator places random
+            rectangular rooms, identifies disconnected floor regions via flood-fill, and links them with L-shaped
+            hallways. Walls are grown around floor tiles, decorations and coins are scattered, and the player spawns
+            near a locked door.
+          </p>
+          <p>
+            <a href="https://github.com/SoySauceZhu/Pac-Man" target="_blank" rel="noreferrer">[GitHub]</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project no-image">
+        <div class="project-text">
+          <h3>Multi-Agent Virtual Personal Assistant</h3>
+          <p class="meta">Research Assistant · Jun 2025 – Sep 2025</p>
+          <p>
+            A full-stack multi-agent assistant for office automation, travel planning, and dynamic scheduling.
+            The system uses LangGraph ReAct for iterative reasoning and action, MCP tool servers for external tools,
+            A2A for cross-agent delegation, Redis-Celery for asynchronous execution, and JWT-based multi-user isolation.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="experience">
+        <div class="experience-head">
+          <div>
+            <strong>Tencent Technology (Shenzhen) Co., Ltd.</strong><br>
+            <span>Technical Operations Intern, Infrastructure Planning</span>
+          </div>
+          <div class="date">Jun 2026 – Aug 2026</div>
+        </div>
+        <ul>
+          <li>Built a capacity analytics pipeline over 600K physical hosts and 2M+ cloud VMs, reducing nightly processing time from 18h to 2h.</li>
+          <li>Built an internal infrastructure support agent and a hardware-pricing automation tool used by the team.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Interests</h2>
+      <p>AI systems · Multi-agent systems · ML infrastructure · Distributed systems · Computational fabrication</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Mingjie Zhu</p>
+    </footer>
+  </main>
+</body>
+</html>
